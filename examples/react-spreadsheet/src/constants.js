@@ -4,3 +4,7 @@ export const COLORS_PRESENCE = [
   "255, 64, 64",
   "255, 166, 3",
 ];
+
+export const COLUMN_WIDTH_MIN = 100;
+
+export const COLUMN_WIDTH_MAX = 800;

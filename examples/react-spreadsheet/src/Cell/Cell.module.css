@@ -6,6 +6,18 @@
   border-left: 1px solid var(--background);
 }
 
+.container_last_right {
+  box-shadow: 1px 0 0 var(--background);
+}
+
+.container_last_bottom {
+  box-shadow: 0 1px 0 var(--background);
+}
+
+.container_last_right_and_bottom {
+  box-shadow: 1px 0 0 var(--background), 0 1px 0 var(--background);
+}
+
 .button,
 .button_selected {
   position: absolute;

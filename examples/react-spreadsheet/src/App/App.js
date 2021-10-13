@@ -7,7 +7,7 @@ import { LiveList, LiveObject } from "@liveblocks/client";
 function App() {
   return (
     <RoomProvider
-      id="spreadsheet-companies-yo"
+      id="example-spreadsheet-companies"
       defaultPresence={() => ({
         name: "Anonymous",
         editingCell: null,
@@ -28,7 +28,7 @@ function App() {
           new LiveObject({
             key: "description",
             value: "Description",
-            width: 1000,
+            width: 600,
           }),
         ]),
         rows: new LiveList([
@@ -49,6 +49,96 @@ function App() {
             url: "https://sprout.place",
             description:
               "Create a virtual space to meet, chat, and play with your favorite people.",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
+          }),
+          new LiveObject({
+            name: "",
+            url: "",
+            description: "",
           }),
         ]),
       }}

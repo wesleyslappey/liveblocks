@@ -53,7 +53,15 @@ export default function Content() {
       </header>
       <div className={styles.container_rows}>
         {rows.map((row, index) => {
-          return <Row key={index} row={row} columns={columns} index={index} />;
+          return (
+            <Row
+              key={index}
+              row={row}
+              columns={columns}
+              index={index}
+              isLastRow={index === rows.length - 1}
+            />
+          );
         })}
       </div>
     </section>

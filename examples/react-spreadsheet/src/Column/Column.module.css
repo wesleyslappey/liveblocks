@@ -1,9 +1,39 @@
 .container {
+  position: relative;
   font-size: 14px;
   flex: none;
-  padding: 9px 8px 9px;
+  padding: 16px 9px;
   display: table-cell;
-  /* border-top: 1px solid var(--background);
-  border-left: 1px solid var(--background); */
+  box-shadow: 1px 0 0 var(--background);
   font-weight: 500;
+}
+
+.resize_handle {
+  position: absolute;
+  top: 0;
+  right: -13px;
+  width: 24px;
+  height: 100%;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: 20;
+  cursor: ew-resize;
+}
+
+.resize_handle:hover,
+.resize_handle:focus {
+  opacity: 1;
+}
+
+.resize_line {
+  position: absolute;
+  top: 0;
+  left: 11px;
+  bottom: 0;
+  width: 1px;
+  background: var(--light-gray);
 }

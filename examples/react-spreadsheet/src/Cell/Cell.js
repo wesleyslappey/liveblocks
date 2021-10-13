@@ -3,7 +3,14 @@ import { useState, useRef } from "react";
 import { COLORS_PRESENCE } from "../constants";
 import styles from "./Cell.module.css";
 
-export default function Cell({ value, setValue, width, cellId }) {
+export default function Cell({
+  value,
+  setValue,
+  width,
+  cellId,
+  isLastRight,
+  isLastBottom,
+}) {
   const updateMyPresence = useUpdateMyPresence();
   const others = useOthers();
   const button = useRef();
@@ -11,8 +18,18 @@ export default function Cell({ value, setValue, width, cellId }) {
   const [isSelected, setIsSelected] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
 
+  let classNameContainer = styles.container;
+
+  if (isLastRight && !isLastBottom) {
+    classNameContainer += ` ${styles.container_last_right}`;
+  } else if (!isLastRight && isLastBottom) {
+    classNameContainer += ` ${styles.container_last_bottom}`;
+  } else if (isLastRight && isLastBottom) {
+    classNameContainer += ` ${styles.container_last_right_and_bottom}`;
+  }
+
   return (
-    <div className={styles.container} style={{ width }}>
+    <div className={classNameContainer} style={{ width }}>
       <input
         ref={input}
         className={styles.input}
