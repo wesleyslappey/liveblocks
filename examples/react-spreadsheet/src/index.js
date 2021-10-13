@@ -4,7 +4,7 @@ import { createClient } from "@liveblocks/client";
 import { LiveblocksProvider } from "@liveblocks/react";
 import "./reset.css";
 import "./index.css";
-import App from "./App/App";
+import App from "./App";
 
 const client = createClient({
   publicApiKey: "pk_YOUR_PUBLIC_KEY", // REPLACE WITH YOUR PUBLIC KEY

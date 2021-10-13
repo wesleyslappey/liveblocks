@@ -1,6 +1,6 @@
 import { useOthers, useUpdateMyPresence } from "@liveblocks/react";
 import { useState, useRef } from "react";
-import { COLORS_PRESENCE } from "../constants";
+import { COLORS_PRESENCE } from "./constants";
 import styles from "./Cell.module.css";
 
 export default function Cell({

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Row.module.css";
-import Cell from "../Cell/Cell";
+import Cell from "./Cell";
 
 export default function Row({ row, columns, index, isLastRow }) {
   const [rowData, setRowData] = useState(row.toObject());

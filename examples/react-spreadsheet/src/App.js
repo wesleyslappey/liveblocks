@@ -1,6 +1,6 @@
 import styles from "./App.module.css";
-import Header from "../Header/Header";
-import Content from "../Content/Content";
+import Header from "./Header";
+import Content from "./Content";
 import { RoomProvider } from "@liveblocks/react";
 import { LiveList, LiveObject } from "@liveblocks/client";
 

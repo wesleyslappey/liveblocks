@@ -1,7 +1,7 @@
 import { useList } from "@liveblocks/react";
 import styles from "./Content.module.css";
-import Row from "../Row/Row";
-import Column from "../Column/Column";
+import Row from "./Row";
+import Column from "./Column";
 import { LiveObject } from "@liveblocks/client";
 
 export default function Content() {

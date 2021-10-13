@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { COLUMN_WIDTH_MAX, COLUMN_WIDTH_MIN } from "../constants";
-import { clamp } from "../utils";
+import { COLUMN_WIDTH_MAX, COLUMN_WIDTH_MIN } from "./constants";
+import { clamp } from "./utils";
 import styles from "./Column.module.css";
 
 export default function Column({ column }) {
