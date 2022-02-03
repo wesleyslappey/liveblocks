@@ -14,7 +14,9 @@ module.exports = async function () {
   const browserA = await puppeteer.launch({
     headless: true,
     args: [
-      `--no-sandbox``--disable-setuid-sandbox``--window-size=${WIDTH},${HEIGHT}`,
+      `--no-sandbox`,
+      `--disable-setuid-sandbox`,
+      `--window-size=${WIDTH},${HEIGHT}`,
       `--window-position=0,0`,
       "--disable-dev-shm-usage",
     ],
@@ -24,7 +26,9 @@ module.exports = async function () {
   const browserB = await puppeteer.launch({
     headless: true,
     args: [
-      `--no-sandbox``--disable-setuid-sandbox``--window-size=${WIDTH},${HEIGHT}`,
+      `--no-sandbox`,
+      `--disable-setuid-sandbox`,
+      `--window-size=${WIDTH},${HEIGHT}`,
       `--window-position=${WIDTH},0`,
       "--disable-dev-shm-usage",
     ],
