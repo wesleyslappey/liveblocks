@@ -13,6 +13,9 @@ export default async function auth(req: NextApiRequest, res: NextApiResponse) {
   const response = await authorize({
     room,
     secret: API_KEY,
+    liveblocksAuthorizeEndpoint:
+      process.env.LIVEBLOCKS_AUTHORIZE_ENDPOINT ||
+      "https://liveblocks.io/api/authorize",
   });
   return res.status(response.status).end(response.body);
 }
