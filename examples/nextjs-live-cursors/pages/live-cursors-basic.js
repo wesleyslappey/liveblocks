@@ -19,12 +19,6 @@ export default function Room() {
       })}
     >
       <PresenceDemo />
-      <ExampleInfo
-        title="Basic Live Cursors Example"
-        description="Open this page in multiple windows to see the live cursors."
-        githubHref="https://github.com/liveblocks/liveblocks/tree/main/examples/nextjs-live-cursors"
-        codeSandboxHref="https://codesandbox.io/s/github/liveblocks/liveblocks/tree/main/examples/nextjs-live-cursors"
-      />
     </RoomProvider>
   );
 }
@@ -70,9 +64,7 @@ function PresenceDemo() {
       }
     >
       <div className="max-w-sm text-center">
-        {cursor
-          ? `${cursor.x},${cursor.y}`
-          : "Move your cursor to broadcast its position to other people in the room."}
+          <iframe src="https://read.bookcreator.com/aWAhdfUWXPQR1UPW7fJOHnfObsb2/_or2hLPmR3WlS34sPH_WKQ" height="550"></iframe>
       </div>
 
       {
